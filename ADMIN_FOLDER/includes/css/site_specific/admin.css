@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*steve force to utf-8 with ñ*/
+/*motorvista overrides*/
+.serverInfoProd { /*ONLY FOR PRODUCTION SITE*/
+    background-color: red;
+    text-transform: uppercase;
+}
+img[src*="button_cancel"], img[src*="button_reset"] {
+    vertical-align: top;
+}
+/*these two together for a smooth blink!*/
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.blink {
+    text-decoration: blink;
+    animation: blink .75s;
+    animation-iteration-count: infinite;
+}
+/*eof blink*/
+#quickStatusUpdateNotify {
+    display: block; /*forces status onto a new line*/
+}
+#quickStatusUpdateNotify input {
+    vertical-align: middle; /*nitpicking*/
+}
+form[name="quick_status_update"] {
+    border: thin solid black;
+    padding: 3px;
+}
+.width100 { /*some tables*/
+    width: 100%;
+}
+.table>tbody>tr>td {/*tables.less, was top*/
+    vertical-align: middle;
+}
+.dataTableHeadingRow {
+    background-color: gainsboro !important;
+}
+.dataTableRow {
+    background-color: transparent !important;
+}
+.dataTableRowOver {
+    background-color: darkgray !important;
+}
+.dataTableRowSelected {
+    background-color: silver !important;
+}
+td.dataTableContent img { /* for vertically aligning the enable/linked image squares in the category/product listing. The bootstrap css sets all img as middle*/
+    vertical-align: baseline;
+}
+.hideAddToCartActive {
+    background-color: red;
+}
+.hideAddToCartOos {
+    border: solid thin red;
+}
+textarea {
+    width: 100% !important; /*zc 80% */
+}
+.input-group > .input-group-addon {
+    vertical-align: top;
+}
+/*language flag icons to top of description box*/
+/*.form-group {
+    margin-bottom: 2px;
+}
+*/
+/*wasted space*/
+form[name="categories"] .form-group .col-md-6 {
+    width: 85%;
+}
+/*description box wide*/
+.form-group > .control-label {
+    text-align: left;
+}
+.fa-before:before {
+    display: inline-block;
+    font-family: FontAwesome, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.floatbutton { /*move up the floating button*/
+    bottom: 500px;
+}
+.input-group-addon { /*language flags*/
+    padding: 0 1px;
+}
+.text-danger {
+    color: red;
+}
+.splitPageResults { /*new: to notice the existence of extra page!*/
+    font-size: 12px;
+}
+.fa-lg {
+    font-size: 1.7em;
+}
+.fa-folder {/*more cowbell/yellow*/
+    color: #f7d673 !important;
+}
+.txt-status-off{
+    color: red !important;
+}
+.txt-posm-on{
+     color: darkblue;
+ }
+.txt-posm-off{
+    opacity:0;
+}
+.configurationColumnLeft {
+    border-right: lightgrey solid 1px;
+}

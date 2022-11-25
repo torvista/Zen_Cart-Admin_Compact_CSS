@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*steve force to utf-8 with ñ*/
+/*motorvista overrides*/
+h1, .h1 {
+    font-size: 22px;
+    margin: 7px 0 10px 7px;
+}
+h2, .h2 {
+    font-size: 20px;
+    margin: 6px 0;
+}
+h3, .h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+h4, .h4 {
+    font-size: 16px;
+    margin: 4px 0;
+}
+.table .alert {
+    padding: 0;
+    border: 0; /*when used on weight 0 in cat/prod listing to stop bottom border overwritting default border */
+}
+.messageStackAlert {/*remove huge space around messagestack texts*/
+    padding:0;
+    margin:0;
+}
+.navbar-nav li > a.dropdown-toggle {
+    font-size: 1em;
+}
+.navbar-default .navbar-nav > li > a {
+    padding-top: 2px;
+}
+.pageHeading a { /*my links to the shop categories, to use the page heading size*/
+    font-size: inherit;
+}
+.adminHeaderAlerts {
+    padding: 0 !important; /*default padding 10 around the check for update link and status */
+}
+.adminHeaderAlerts a input.btn {
+    font-size: 1em;
+    padding: 0; /*default padding 12 around the check for update link and status */
+}
+.headerBar {
+    padding: 2px;
+    background-color: gray;
+    font-size: 0.9em;
+}
+.navbar {
+    margin-bottom: 0; /*steve was 20px*/
+}
+.infoBoxContent {
+    padding: 3px;
+}
+td.infoBoxContent hr {
+    margin: 0; /*bootstrap 20px*/
+    padding: 0;
+}
+/*reduce the three order search boxes to the minimum size
+bootstrap: order search fields are too big...but also impacts on order details page...*/
+.form-control {
+    font-size: 1em; /*steve was 14px*/
+    height: auto;
+    padding: 3px;
+}
+.input-group > .input-group-addon {
+    vertical-align: top;
+}
+/*language flag icons to top of description box*/
+.form-group {
+    margin-bottom: 2px;
+}
+/*wasted space*/
+form[name="categories"] .form-group .col-md-6 {
+    width: 85%;
+}
+/*box descriptions left*/
+label.radio-inline {
+    padding-top: 0 !important;
+}
+/*bootstrap*/
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 2px;
+}
+.input-group-addon { /*language flags*/
+    padding: 0 1px;
+}
+/*to get td columns to display as narrow as possible*/
+td {
+    width: auto;
+}
+td.min {
+    width: 1%;
+    white-space: nowrap;
+}
+.btn { /*main buttons*/
+    font-size: 11px;
+}
+.btn-group a { /*category/product listing group of edit buttons*/
+    font-size: 8px;
+}
